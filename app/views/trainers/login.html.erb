@@ -1,0 +1,15 @@
+<h1>Trainer Login</h1>
+
+<%= form_with model: @trainer do |form| %>
+    <div>
+        <%= form.label :name %>
+        <%= form.text_field :name %>
+
+        <%= form.label :password %>
+        <%= form.text_field :password %>
+    </div>
+
+    <div>
+        <%= form.submit %>
+    </div>
+<% end %>
