@@ -1,0 +1,23 @@
+<h1> Discover pokemons! </h1>
+
+<h3> This is your chance to catch and learn about new pokemons! </h3>
+
+<img src="<%= @pokemon.sprites.front_default %>" style="width: 300px;">
+
+<h4>Who is that Pokemon?</h4>
+
+<%=label_tag 'name' %>
+<%=text_field_tag 'name', value= @guess%>
+
+<button onClick="verify()">  Submit </button>
+
+<script>
+
+    function verify(){
+        console.log("<%= @pokemon.name%>")
+        console.log("<%= @guess%>")
+        console.log(<%= validName?(@pokemon.name, @guess)%>);
+    }
+</script>
+
+

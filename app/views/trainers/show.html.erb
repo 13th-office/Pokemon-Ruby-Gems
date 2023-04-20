@@ -1,0 +1,11 @@
+<h1> <%=@trainer.name%> </h1>
+
+<h3> This trainer owns these pokemons: </h3>
+
+<ul>
+    <% @owned_pokemons.each do |pokemon| %>
+        <li>
+            <%= link_to pokemon.name, pokemon%>
+        </li>
+    <% end %>
+</ul>
