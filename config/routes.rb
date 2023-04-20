@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  root "trainers#login"
+  root "trainers#index"
   post "/", to: "articles#authenticate"
 
-  resources :pokemons
+  resources :pokemons do
+    get "/discover" to: "pokemons/discover"
+  end
   resources :trainers
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

@@ -2,10 +2,9 @@ class TrainersController < ApplicationController
     def login
     end
 
-    def authenticate
-        @trainer = Trainer.new(:name,:password)
-        if @trainer.save
-            redirect_to @trainer
-        end
+    def index
+        @trainers = Trainer.where("id != 1")
+        @pokemons = Pokemon.all
+        
     end
 end

@@ -1,6 +1,6 @@
 FactoryBot.define do
-  factory :pokedex do
-    user { nil }
+  factory :owns_pokemon do
+    trainer { nil }
     pokemon { nil }
   end
 end

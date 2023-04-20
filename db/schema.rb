@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_19_141229) do
-  create_table "pokedexes", force: :cascade do |t|
-    t.integer "user_id", null: false
+ActiveRecord::Schema[7.0].define(version: 2023_04_20_144043) do
+  create_table "owns_pokemons", force: :cascade do |t|
+    t.integer "trainer_id", null: false
     t.integer "pokemon_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["pokemon_id"], name: "index_pokedexes_on_pokemon_id"
-    t.index ["user_id"], name: "index_pokedexes_on_user_id"
+    t.index ["pokemon_id"], name: "index_owns_pokemons_on_pokemon_id"
+    t.index ["trainer_id"], name: "index_owns_pokemons_on_trainer_id"
   end
 
   create_table "pokemons", force: :cascade do |t|
@@ -35,6 +35,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_19_141229) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "pokedexes", "pokemons"
-  add_foreign_key "pokedexes", "users"
+  add_foreign_key "owns_pokemons", "pokemons"
+  add_foreign_key "owns_pokemons", "trainers"
 end

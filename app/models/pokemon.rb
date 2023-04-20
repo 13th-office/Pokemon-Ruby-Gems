@@ -1,4 +1,3 @@
 class Pokemon < ApplicationRecord
-    has_many :pokedexes
-    has_many :trainers, through: :pokedexes
+    belongs_to :trainer 
 end

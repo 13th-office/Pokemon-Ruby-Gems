@@ -1,0 +1,24 @@
+<h1>Pokedex Home</h1>
+
+<h2> Oponents </h2>
+<ul>
+    <% @trainers.each do |trainer| %>
+        <li>
+            <%= link_to trainer.name, trainer%>
+        </li>
+    <% end %>
+</ul>
+
+<h2> Known Pokemons </h2>
+<% if @pokemons.empty? %>
+    <p>OMG You don't know any pokemons!</p>
+<% end %>
+<ul>
+    <% @pokemons.each do |pokemon| %>
+        <li>
+            <%= link_to pokemon.name, pokemon%>
+        </li>
+    <% end %>
+</ul>
+
+<%= link_to "Discover new Pokemons!", "/pokemons/discover"%>
