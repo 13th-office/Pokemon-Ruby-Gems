@@ -1,4 +1,4 @@
 class Trainer < ApplicationRecord
-    has_many :pokedexes
+    validates :name, presence: true, length: {minimum: 3}
     has_many :pokemons, through: :pokedexes
 end
