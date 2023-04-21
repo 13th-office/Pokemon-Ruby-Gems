@@ -1,0 +1,345 @@
+{
+  "RSpec": {
+    "coverage": {
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/config/environment.rb": {
+        "lines": [
+          null,
+          1,
+          null,
+          null,
+          1
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/config/application.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/config/boot.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/config/environments/test.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/config/initializers/assets.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/config/initializers/content_security_policy.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/config/initializers/filter_parameter_logging.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/config/initializers/inflections.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/config/initializers/permissions_policy.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/spec/factories/guess_pokemons.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/spec/factories/owns_pokemons.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/spec/factories/pokemons.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/spec/factories/trainers.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/config/routes.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/app/helpers/pokemons_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/app/helpers/trainers_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/app/controllers/trainers_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/app/models/trainer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "C:/Users/gaelr/Documents/Pokemon-Ruby-Gems/instadex/app/models/pokemon.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      }
+    },
+    "timestamp": 1682109684
+  }
+}
