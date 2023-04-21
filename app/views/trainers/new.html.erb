@@ -5,6 +5,11 @@
     <%= form.label :name %><br>
     <%= form.text_field :name %>
   </div>
+
+  <% @trainer.errors.full_messages_for(:name).each do |message| %>
+      <div style="color: red"><%= message %></div>
+  <% end %>
+
   <div>
     <%= form.submit %>
   </div>
