@@ -1,0 +1,2 @@
+class GuessPokemon < ApplicationRecord
+end

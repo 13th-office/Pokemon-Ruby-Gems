@@ -6,25 +6,12 @@
 
 <h4>Who is that Pokemon?</h4>
 
-<%= form_with yaml: @pokemon do |form| %>
+<%= form_with model: @guess, url: create_pokemon_path(order: @pokemon.order, expected_name:@pokemon.name) do |form| %>
   <div>
-    <%= form.label :expected_name %><br>
-    <%= form.text_field :expected_name %>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
   </div>
   <div>
-    <%= form.submit %>
+    <%= form.submit "Submit Guess" %>
   </div>
 <% end %>
-
-<button onClick="verify()">  Submit </button>
-
-<script>
-
-    function verify(){
-        console.log("<%= @pokemon.name%>")
-        console.log("<%= @pokemon %>")
-        console.log(<%= validName?(@pokemon.name, @guess)%>);
-    }
-</script>
-
-

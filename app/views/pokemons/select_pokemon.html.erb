@@ -1,0 +1,9 @@
+<h1> Select the pokemon </h1>
+
+<ul>
+    <% @pokemons.each do |pokemon| %>
+        <li>
+            <%= button_to pokemon.name, add_pokemon_path(pokemon_id: pokemon.id, trainer_id: @trainer), method: :post %>
+        </li>
+    <% end %>
+</ul>
