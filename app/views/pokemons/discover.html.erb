@@ -6,8 +6,15 @@
 
 <h4>Who is that Pokemon?</h4>
 
-<%=label_tag 'name' %>
-<%=text_field_tag 'name', value= @guess%>
+<%= form_with yaml: @pokemon do |form| %>
+  <div>
+    <%= form.label :expected_name %><br>
+    <%= form.text_field :expected_name %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
 
 <button onClick="verify()">  Submit </button>
 
@@ -15,7 +22,7 @@
 
     function verify(){
         console.log("<%= @pokemon.name%>")
-        console.log("<%= @guess%>")
+        console.log("<%= @pokemon %>")
         console.log(<%= validName?(@pokemon.name, @guess)%>);
     }
 </script>
