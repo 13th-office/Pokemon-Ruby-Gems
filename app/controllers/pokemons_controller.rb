@@ -23,8 +23,8 @@ class PokemonsController < ApplicationController
     end
 
     def show
-        poke = Pokemon.find(params[:id])
-        @pokemon = PokeApi.get(pokemon: poke.name)
+        @pokemon = Pokemon.find(params[:id])
+        @pokeApi = PokeApi.get(pokemon: @pokemon.p_id)
     end
 
     def select_pokemon
