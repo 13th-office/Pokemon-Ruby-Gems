@@ -24,14 +24,12 @@ class PokemonsController < ApplicationController
 
     def show
         @pokemon = Pokemon.find(params[:id])
-        @pokeApi = PokeApi.get(pokemon: @pokemon.p_id)
+        @pokeApi = PokeApi.get(pokemon: @pokemon.name)
     end
 
     def select_pokemon
         @trainer = params[:trainer_id]
-        puts @trainer
         @pokemons = Pokemon.where.not(id: OwnsPokemon.select("pokemon_id").where(trainer_id: @trainer))
-        puts @pokemons
     end
 
     def add_pokemon
@@ -40,7 +38,9 @@ class PokemonsController < ApplicationController
         owns = OwnsPokemon.new(trainer_id: trainer, pokemon_id: pokemon)
 
         if owns.save
-            redirect_to trainers_url(trainer)
+            redirect_to trainer_url(trainer)
+        # else
+        #     render :select_pokemon, status: :unprocessable_entity
         end
 
     end
