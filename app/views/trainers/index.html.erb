@@ -10,9 +10,9 @@
 </ul>
 <%= link_to "Add a new oponent", new_trainer_path%>
 
-<h2> Known Pokemons </h2>
+<h2> My Pokemons </h2>
 <% if @pokemons.empty? %>
-    <p>OMG You don't know any pokemons!</p>
+    <p>OMG You don't have any pokemons!</p>
 <% end %>
 <ul>
     <% @pokemons.each do |pokemon| %>
@@ -22,4 +22,4 @@
     <% end %>
 </ul>
 
-<%= link_to "Discover new Pokemons!", "/pokemons/discover"%>
+<%= link_to "Catch new Pokemons!", "/pokemons/discover"%>
