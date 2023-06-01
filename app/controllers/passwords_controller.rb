@@ -1,5 +1,5 @@
 class PasswordsController < ApplicationController
-    #before_action :redirect_if_authenticated
+    before_action :redirect_if_authenticated
 
     def new
     end

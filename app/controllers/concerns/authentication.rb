@@ -16,9 +16,7 @@ module Authentication
     end
   
     def redirect_if_authenticated
-      if user_signed_in?
-        redirect_to trainers_path, alert: "You are already logged in."
-      else
+      if !user_signed_in?
         redirect_to root_path, alert: "You must log in."
       end
     end

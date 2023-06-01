@@ -1,10 +1,15 @@
 class TrainersController < ApplicationController
+    before_action :redirect_if_authenticated
+
+
     def login
     end
 
     def index
-        @trainers = Trainer.where("id != 1")
-        @pokemons = Pokemon.all()
+        puts "hi"
+        puts Current.user.email
+        @trainers = Trainer.where.not(email: Current.user.email)
+        @pokemons = Pokemon.where(id:OwnsPokemon.select("pokemon_id").where(trainer_id: Trainer.find_by(email: Current.user.email)))
     end
     
     def new

@@ -1,6 +1,8 @@
 require 'poke-api-v2'
 
 class PokemonsController < ApplicationController
+    before_action :redirect_if_authenticated
+
     def discover
         order_number = rand(1..1010)
         while (Pokemon.find_by(p_id: order_number)) != nil
@@ -15,11 +17,23 @@ class PokemonsController < ApplicationController
         name = params[:guess_pokemon][:name]
         order = params[:order]
         if name == expected_name
-            pokemon = Pokemon.new(name: name, p_id: order)
-            if pokemon.save 
+            puts "Yei"
+            pokemon = Pokemon.find_by(name: name, p_id: order)
+            if pokemon.blank?
+                puts "No"
+                pokemon = Pokemon.new(name: name, p_id: order)
+                if !pokemon.save 
+                    return
+                end
+            end
+            trainer = Trainer.find_by(email: Current.user.email)
+            p trainer
+            owns = OwnsPokemon.new(trainer_id: trainer.id, pokemon_id: pokemon.id)
+            if owns.save
                 redirect_to pokemon
             end
         end
+            
     end
 
     def show

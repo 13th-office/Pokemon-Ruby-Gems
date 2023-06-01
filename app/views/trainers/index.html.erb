@@ -1,6 +1,9 @@
 <h1>Pokedex Home</h1>
 
 <h2> Oponents </h2>
+<% if @trainers.empty? %>
+    <p>No oponents yet! Invite your friends</p>
+<% end %>
 <ul>
     <% @trainers.each do |trainer| %>
         <li>
@@ -8,7 +11,6 @@
         </li>
     <% end %>
 </ul>
-<%= link_to "Add a new oponent", new_trainer_path%>
 
 <h2> My Pokemons </h2>
 <% if @pokemons.empty? %>
@@ -23,3 +25,5 @@
 </ul>
 
 <%= link_to "Catch new Pokemons!", "/pokemons/discover"%>
+<br/>
+<%= link_to "Settings", "/settings"%>
